@@ -29,65 +29,50 @@ import {
 	RoleAccessTcpModule, 
 } from './api/role-access';
 import { 
-	FieldFieldOptionHttpModule,
-	FieldFieldOptionHttpTcpModule, 
-	FieldFieldOptionTcpModule, 
-} from './api/field-field-option';
+	PostContentHttpModule,
+	PostContentHttpTcpModule, 
+	PostContentTcpModule, 
+} from './api/post-content';
 import { 
-	FieldOptionHttpModule,
-	FieldOptionHttpTcpModule, 
-	FieldOptionTcpModule, 
-} from './api/field-option';
+	PostPostOptionHttpModule,
+	PostPostOptionHttpTcpModule, 
+	PostPostOptionTcpModule, 
+} from './api/post-post-option';
 import { 
-	FieldStatusHttpModule,
-	FieldStatusHttpTcpModule,
-	FieldStatusTcpModule, 
-} from './api/field-status';
+	PostOptionHttpModule,
+	PostOptionHttpTcpModule, 
+	PostOptionTcpModule, 
+} from './api/post-option';
 import { 
-	FieldHttpModule,
-	FieldHttpTcpModule,
-	FieldTcpModule, 
-} from './api/field';
+	PostStatusHttpModule,
+	PostStatusHttpTcpModule,
+	PostStatusTcpModule, 
+} from './api/post-status';
 import { 
-	FormFormOptionHttpModule,
-	FormFormOptionHttpTcpModule, 
-	FormFormOptionTcpModule, 
-} from './api/form-form-option';
+	PostHttpModule,
+	PostHttpTcpModule,
+	PostTcpModule, 
+} from './api/post';
 import { 
-	FormOptionHttpModule,
-	FormOptionHttpTcpModule, 
-	FormOptionTcpModule, 
-} from './api/form-option';
+	CategoryCategoryOptionHttpModule,
+	CategoryCategoryOptionHttpTcpModule, 
+	CategoryCategoryOptionTcpModule, 
+} from './api/category-category-option';
 import { 
-	FormStatusHttpModule,
-	FormStatusHttpTcpModule,
-	FormStatusTcpModule, 
-} from './api/form-status';
+	CategoryOptionHttpModule,
+	CategoryOptionHttpTcpModule, 
+	CategoryOptionTcpModule, 
+} from './api/category-option';
 import { 
-	FormHttpModule,
-	FormHttpTcpModule,
-	FormTcpModule, 
-} from './api/form';
+	CategoryStatusHttpModule,
+	CategoryStatusHttpTcpModule,
+	CategoryStatusTcpModule, 
+} from './api/category-status';
 import { 
-	FormFieldHttpModule,
-	FormFieldHttpTcpModule,
-	FormFieldTcpModule, 
-} from './api/form-field';
-import { 
-	FieldContentHttpModule,
-	FieldContentHttpTcpModule,
-	FieldContentTcpModule, 
-} from './api/field-content';
-import { 
-	ContentStatusHttpModule,
-	ContentStatusHttpTcpModule,
-	ContentStatusTcpModule, 
-} from './api/content-status';
-import { 
-	ContentHttpModule,
-	ContentHttpTcpModule,
-	ContentTcpModule, 
-} from './api/content';
+	CategoryHttpModule,
+	CategoryHttpTcpModule,
+	CategoryTcpModule, 
+} from './api/category';
 
 const Http = {
 	AccessAccessOptionHttpModule,
@@ -96,17 +81,15 @@ const Http = {
 	AccessHttpModule,
 	RoleAccessHttpModule,
 	SettingHttpModule,
-	FieldFieldOptionHttpModule,
-	FieldOptionHttpModule,
-	FieldStatusHttpModule,
-	FieldHttpModule,
-	FormOptionHttpModule,
-	FormStatusHttpModule,
-	FormHttpModule,
-	FormFieldHttpModule,
-	ContentStatusHttpModule,
-	ContentHttpModule,
-	FieldContentHttpModule,
+	PostContentHttpModule,
+	PostPostOptionHttpModule,
+	PostOptionHttpModule,
+	PostStatusHttpModule,
+	PostHttpModule,
+	CategoryCategoryOptionHttpModule,
+	CategoryOptionHttpModule,
+	CategoryStatusHttpModule,
+	CategoryHttpModule,
 };
 const HttpTcp = {
 	AccessAccessOptionHttpTcpModule,
@@ -115,18 +98,15 @@ const HttpTcp = {
 	AccessHttpTcpModule,
 	RoleAccessHttpTcpModule,
 	SettingHttpTcpModule,
-	FieldFieldOptionHttpTcpModule,
-	FieldOptionHttpTcpModule,
-	FieldStatusHttpTcpModule,
-	FieldHttpTcpModule,
-	FormFormOptionHttpTcpModule,
-	FormOptionHttpTcpModule,
-	FormStatusHttpTcpModule,
-	FormHttpTcpModule,
-	FormFieldHttpTcpModule,
-	ContentStatusHttpTcpModule,
-	ContentHttpTcpModule,
-	FieldContentHttpTcpModule,
+	PostContentHttpTcpModule,
+	PostPostOptionHttpTcpModule,
+	PostOptionHttpTcpModule,
+	PostStatusHttpTcpModule,
+	PostHttpTcpModule,
+	CategoryCategoryOptionHttpTcpModule,
+	CategoryOptionHttpTcpModule,
+	CategoryStatusHttpTcpModule,
+	CategoryHttpTcpModule,
 };
 const Tcp = {
 	AccessAccessOptionTcpModule,
@@ -135,18 +115,15 @@ const Tcp = {
 	AccessTcpModule,
 	RoleAccessTcpModule,
 	SettingTcpModule,
-	FieldFieldOptionTcpModule,
-	FieldOptionTcpModule,
-	FieldStatusTcpModule,
-	FieldTcpModule,
-	FormFormOptionTcpModule,
-	FormOptionTcpModule,
-	FormStatusTcpModule,
-	FormTcpModule,
-	FormFieldTcpModule,
-	ContentStatusTcpModule,
-	ContentTcpModule,
-	FieldContentTcpModule,
+	PostContentTcpModule,
+	PostPostOptionTcpModule,
+	PostOptionTcpModule,
+	PostStatusTcpModule,
+	PostTcpModule,
+	CategoryCategoryOptionTcpModule,
+	CategoryOptionTcpModule,
+	CategoryStatusTcpModule,
+	CategoryTcpModule,
 };
 
 export {
@@ -171,31 +148,31 @@ export {
 	SettingHttpModule,
 	SettingHttpTcpModule,
 	SettingTcpModule,
-	FieldFieldOptionTcpModule,
-	FieldOptionTcpModule,
-	FieldStatusTcpModule,
-	FieldTcpModule,
-	FieldFieldOptionHttpModule,
-	FieldOptionHttpModule,
-	FieldStatusHttpModule,
-	FieldHttpModule,
-	FormFormOptionTcpModule,
-	FormOptionTcpModule,
-	FormStatusTcpModule,
-	FormTcpModule,
-	FormFieldHttpModule,
-	FormOptionHttpModule,
-	FormStatusHttpModule,
-	FormHttpModule,
-	FormFieldHttpTcpModule,
-	FormFieldTcpModule,
-	ContentStatusHttpModule,
-	ContentHttpModule,
-	ContentStatusHttpTcpModule,
-	ContentHttpTcpModule,
-	ContentStatusTcpModule,
-	ContentTcpModule,
-	FieldContentHttpModule,
-	FieldContentHttpTcpModule,
-	FieldContentTcpModule,
+	PostContentHttpModule,
+	PostContentHttpTcpModule,
+	PostContentTcpModule,
+	PostPostOptionTcpModule,
+	PostOptionTcpModule,
+	PostStatusTcpModule,
+	PostTcpModule,
+	PostPostOptionHttpTcpModule,
+	PostOptionHttpTcpModule,
+	PostStatusHttpTcpModule,
+	PostHttpTcpModule,
+	PostPostOptionHttpModule,
+	PostOptionHttpModule,
+	PostStatusHttpModule,
+	PostHttpModule,
+	CategoryCategoryOptionTcpModule,
+	CategoryOptionTcpModule,
+	CategoryStatusTcpModule,
+	CategoryTcpModule,
+	CategoryCategoryOptionHttpTcpModule,
+	CategoryOptionHttpTcpModule,
+	CategoryStatusHttpTcpModule,
+	CategoryHttpTcpModule,
+	CategoryCategoryOptionHttpModule,
+	CategoryOptionHttpModule,
+	CategoryStatusHttpModule,
+	CategoryHttpModule,
 };
