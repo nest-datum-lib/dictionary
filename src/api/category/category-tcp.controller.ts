@@ -67,7 +67,7 @@ export class CategoryTcpController extends TcpController {
 
 	@MessagePattern({ cmd: 'category.many' })
 	async many(payload) {
-		console.log('???????????????????', payload);
+		console.log('DICTIONARY', payload);
 
 		return await super.many(payload);
 	}
