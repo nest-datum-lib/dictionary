@@ -35,6 +35,8 @@ export class PostService extends MainService {
 			postStatusId: true,
 			name: true,
 			description: true,
+			isDeleted: true,
+			isNotDelete: true,
 		});
 	}
 
@@ -46,6 +48,8 @@ export class PostService extends MainService {
 			postStatusId: true,
 			name: true,
 			description: true,
+			isDeleted: true,
+			isNotDelete: true,
 		});
 	}
 
