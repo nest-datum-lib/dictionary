@@ -27,7 +27,7 @@ export class CategorySeeder {
                 description: 'Job skills.',
 				isNotDelete: 1,
 			}, {
-				id: "dictionary-cat-ed-degree",
+				id: "dictionary-cated-degree",
 				userId: process.env.USER_ID,
                 categoryStatusId: "dictionary-cat-status-active",
                 name: 'Education Degree',
@@ -54,7 +54,35 @@ export class CategorySeeder {
                 name: 'Languages',
                 description: 'Languages.',
 				isNotDelete: 1,
-			}], async (data) => {
+			}, {
+                id: "dictionary-cat-ed-asd",
+                userId: "happ-sso-user-admin",
+                categoryStatusId: "dictionary-cat-status-active",
+                name: "Associate's Degree",
+                description: "Associate's Degree.",
+                isNotDelete: 1
+            }, {
+                id: "dictionary-cat-ed-bachd",
+                userId: "happ-sso-user-admin",
+                categoryStatusId: "dictionary-cat-status-active",
+                name: "Bachelor's degree",
+                description: "Bachelor's degree",
+                isNotDelete: 1
+            }, {
+                id: "dictionary-cat-ed-masd",
+                userId: "happ-sso-user-admin",
+                categoryStatusId: "dictionary-cat-status-active",
+                name: "Master's degree",
+                description: "Master's degree.",
+                isNotDelete: 1
+            }, {
+                id: "dictionary-cat-ed-docd",
+                userId: "happ-sso-user-admin",
+                categoryStatusId: "dictionary-cat-status-active",
+                name: "Doctoral Degree",
+                description: "Doctoral Degree.",
+                isNotDelete: 1
+            }], async (data) => {
 				try {
 					await this.categoryRepository.insert(data);
 				}

@@ -7,8 +7,10 @@ import {
 
 import { PostStatusSeeder } from './post-status.seeder';
 import { CategoryStatusSeeder } from './category-status.seeder';
+import { CategoryOptionSeeder } from './category-option.seeder';
 import { PostSeeder } from './post.seeder';
 import { CategorySeeder } from './category.seeder';
+import { CategoryCategoryOptionSeeder } from './category-category-option.seeder';
 
 @Injectable()
 export class SeedService {
@@ -19,13 +21,17 @@ export class SeedService {
 		private readonly connection: Connection,
 		private readonly postStatus: PostStatusSeeder,
 		private readonly categoryStatus: CategoryStatusSeeder,
+		private readonly categoryOption: CategoryOptionSeeder,
 		private readonly category: CategorySeeder,
+		private readonly categoryCategoryOption: CategoryCategoryOptionSeeder,
 		private readonly post: PostSeeder,
 	) {
 		this.seeders = [
 			this.postStatus,
 			this.categoryStatus,
+			this.categoryOption,
 			this.category,
+			this.categoryCategoryOption,
 			this.post,
 		];
 	}
