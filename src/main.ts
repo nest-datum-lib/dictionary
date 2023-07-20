@@ -1,4 +1,5 @@
-require('dotenv').config();
+const env = require('dotenv').config();
+console.log("ENV:", env);
 
 import { NestFactory } from '@nestjs/core';
 import { MicroserviceOptions } from '@nestjs/microservices';
