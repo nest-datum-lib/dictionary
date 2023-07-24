@@ -1,2 +1,2 @@
 # @nest-datum-lib/dictionary
-## Dictionary.
+## Dictionary
